@@ -1,0 +1,153 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <center>
+            <div id="loader">
+                <div id="sun"></div>
+                <div id="mercury"></div> 
+                <div id="venus"></div>
+                <div id="earth"></div>
+                <div id="mars"></div>
+                <div id="jupiter"></div>
+            </div>
+        </center>
+        <style type="text/css">
+        
+
+body {
+    background: black url("http://space-facts.com/wp-content/uploads/magellanic-clouds.png");
+}
+
+#loader {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+#sun {
+   width: 100px; 
+   height: 100px;
+   background: url("http://orig12.deviantart.net/c7d3/f/2013/292/7/5/sun_transparent_background_sun_world_by_royalblueiv-d6r3ze7.png");
+   background-size: 100px 100px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   border-radius: 50%;
+   transform: translate(-50%, -50%);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+}
+#mercury {
+   width: 9px; 
+   height: 70px;
+   position: absolute;
+   background: url("http://space-facts.com/wp-content/uploads/mercury-transparent.png");   
+   background-size: 9px 9px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   animation: mercury 7s infinite;
+   transform-origin: top left;
+   animation-timing-function: linear;
+   opacity: 0.9;    
+}
+#venus {
+   width: 19px; 
+   height: 120px;
+   position: absolute;
+   background: url("http://space-facts.com/wp-content/uploads/venus-transparent.png");   
+   background-size: 19px 19px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   animation: venus 18s infinite;
+   transform-origin: top left;
+   animation-timing-function: linear;
+   opacity: 0.9;    
+}
+#earth {
+   width: 21px; 
+   height: 180px;
+   position: absolute;
+   background: url("https://upload.wikimedia.org/wikipedia/commons/2/22/Earth_Western_Hemisphere_transparent_background.png");   
+   background-size: 21px 21px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   animation: earth 30s infinite;
+   transform-origin: top left;
+   animation-timing-function: linear;
+   opacity: 0.9;
+   
+}
+#mars {
+   width: 17px;
+   height: 240px; 
+   position: absolute;
+   background: url("https://userscontent2.emaze.com/images/c773e4a8-be27-4eb0-80d7-0f8b1112cb27/99b252cc31d994b9c60d9a97c2024fae.png");
+   background-size: 17px 17px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   animation: mars 57s infinite;
+   transform-origin: top left;
+   animation-timing-function: linear;
+   opacity: 0.9;
+}
+/*#jupiter {
+   width: 220px;
+   height: 480px; 
+   position: absolute;
+   background: url("http://space-facts.com/wp-content/uploads/jupiter-transparent.png");
+   background-size: 220px 220px;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   animation: jupiter 361s infinite;
+   transform-origin: top left;
+   animation-timing-function: linear;
+   opacity: 0.9;
+}*/
+
+@keyframes mercury {
+   0% {
+      transform: rotate(0deg); 
+   } 
+   100% {
+      transform: rotate(360deg); 
+   }    
+}
+@keyframes venus {
+   0% {
+      transform: rotate(0deg); 
+   } 
+   100% {
+      transform: rotate(360deg); 
+   }    
+}
+@keyframes earth {
+   0% {
+      transform: rotate(0deg); 
+   } 
+   100% {
+      transform: rotate(360deg); 
+   }    
+}
+@keyframes mars {
+   0% {
+      transform: rotate(0deg); 
+   } 
+   100% {
+      transform: rotate(360deg); 
+   }    
+}
+/*@keyframes jupiter {
+   0% {
+      transform: rotate(0deg); 
+   } 
+   100% {
+      transform: rotate(360deg); 
+   }    
+}*/
+    </body>
+</html>
